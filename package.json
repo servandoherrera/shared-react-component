@@ -1,33 +1,22 @@
 {
   "name": "shared-react-component",
   "version": "1.0.0",
-  "description": "Shared React Component",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel src -d build",
-    "prepare": "npm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/servandoherrera/shared-react-component.git"
-  },
-  "keywords": [
-    "test",
-    "shared",
-    "react",
-    "component"
-  ],
-  "author": "Servando Herrera",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/servandoherrera/shared-react-component/issues"
-  },
-  "homepage": "https://github.com/servandoherrera/shared-react-component#readme",
+  "description": "shared component test",
+  "main": "build/index.js",
+  "repository": "git@github.com:servandoherrera/shared-react-component.git",
+  "author": "<servando.herrera@zoho.com>",
+  "license": "MIT",
   "dependencies": {
+    "react": "^16.4.1"
+  },
+  "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1"
+  },
+  "scripts": {
+    "build": "babel src -d build",
+    "prepare": "yarn run build"
   }
 }
