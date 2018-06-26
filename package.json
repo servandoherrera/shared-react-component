@@ -18,5 +18,13 @@
   "scripts": {
     "build": "babel src -d build",
     "prepare": "yarn run build"
-  }
+  },
+ "jest" : {
+    "transform": {
+      "^.+\\.js?$": "babel-jest"
+    },
+    "transformIgnorePatterns": [
+      "!node_modules/react-runtime"
+    ]
+  }  
 }
